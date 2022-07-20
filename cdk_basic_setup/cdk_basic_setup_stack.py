@@ -5,6 +5,7 @@ from aws_cdk import (
 )
 from constructs import Construct
 from .iam_construct import IAMConstruct
+from .kms_construct import KMSConstruct
 
 class CdkBasicSetupStack(core.Stack):
     """Build the app stacks and its resources."""
@@ -20,6 +21,10 @@ class CdkBasicSetupStack(core.Stack):
     def create_stack(stack: core.Stack, env: str, config: dict) -> None:
         """Create and add the resources to the application stack"""
         CdkBasicSetupStack.create_iam_user_infra(
+            stack=stack, env=env, config=config
+        )
+        
+        kms_key = KMSConstruct.create_kms_key_from_arn(
             stack=stack, env=env, config=config
         )
         
