@@ -1,0 +1,70 @@
+{
+  "Resources": {
+    "cdkbasicuseridA5B11C4E": {
+      "Type": "AWS::IAM::User",
+      "Properties": {
+        "Groups": [
+          {
+            "Ref": "cdkbasicgroupid1713D7EB"
+          }
+        ],
+        "ManagedPolicyArns": [
+          {
+            "Ref": "cdkbasicdataaccesspolicyidA6ECE998"
+          }
+        ],
+        "UserName": "cdk-basic-iam-user"
+      },
+      "Metadata": {
+        "aws:cdk:path": "pgi-basic-cdk-setup/cdk-basic-user-id/Resource"
+      }
+    },
+    "cdkbasicgroupid1713D7EB": {
+      "Type": "AWS::IAM::Group",
+      "Properties": {
+        "GroupName": "cdk-basic-iam-group"
+      },
+      "Metadata": {
+        "aws:cdk:path": "pgi-basic-cdk-setup/cdk-basic-group-id/Resource"
+      }
+    },
+    "cdkbasicdataaccesspolicyidA6ECE998": {
+      "Type": "AWS::IAM::ManagedPolicy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "iam:DeleteAccessKey",
+                "iam:GetAccessKeyLastUsed",
+                "iam:UpdateAccessKey",
+                "iam:CreateAccessKey",
+                "iam:ListAccessKey"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                "arn:aws:iam::926405661193:user/${aws:username}",
+                "arn:aws:iam::926405661193:user/cdk_basic/${aws:username}"
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "Description": "",
+        "Path": "/"
+      },
+      "Metadata": {
+        "aws:cdk:path": "pgi-basic-cdk-setup/cdk-basic-data-access-policy-id/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/1WKwQ6CMBBEv4V7WaxcOJpw8GRCMH5As6xaka7ZtjGk6b+bwsnTm3kzGnTbga5O5utrnOYmIQtBugaDs+rZ+SARg+rvbiTPUZCyKl9rFkg3T1KmjWfh+CltDxfjzIOmgd8W16L/RM5qWMOTXdOCPsCxenlra4ku2IVg3PkDEtMrv50AAAA="
+      },
+      "Metadata": {
+        "aws:cdk:path": "pgi-basic-cdk-setup/CDKMetadata/Default"
+      }
+    }
+  }
+}

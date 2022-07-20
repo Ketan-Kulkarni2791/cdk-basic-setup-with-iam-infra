@@ -1,0 +1,97 @@
+{
+  "version": "15.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "pgi-basic-cdk-setup": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://926405661193/ap-south-1",
+      "properties": {
+        "templateFile": "pgi-basic-cdk-setup.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/pgi-basic-cdk-setup/cdk-basic-user-id/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cdkbasicuseridA5B11C4E",
+            "trace": [
+              "new User (C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\aws-iam\\lib\\user.js:54:22)",
+              "C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8230:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8630:24)",
+              "Kernel._create (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8230:34)",
+              "Kernel.create (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:7969:29)",
+              "KernelHost.processRequest (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9614:36)",
+              "KernelHost.run (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9577:22)",
+              "Immediate._onImmediate (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9578:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/pgi-basic-cdk-setup/cdk-basic-group-id/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cdkbasicgroupid1713D7EB",
+            "trace": [
+              "new Group (C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\aws-iam\\lib\\group.js:107:23)",
+              "C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8230:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8630:24)",
+              "Kernel._create (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8230:34)",
+              "Kernel.create (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:7969:29)",
+              "KernelHost.processRequest (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9614:36)",
+              "KernelHost.run (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9577:22)",
+              "Immediate._onImmediate (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9578:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/pgi-basic-cdk-setup/cdk-basic-data-access-policy-id/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cdkbasicdataaccesspolicyidA6ECE998",
+            "trace": [
+              "new ManagedPolicy (C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\aws-iam\\lib\\managed-policy.js:39:26)",
+              "C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8230:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8630:24)",
+              "Kernel._create (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8230:34)",
+              "Kernel.create (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:7969:29)",
+              "KernelHost.processRequest (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9614:36)",
+              "KernelHost.run (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9577:22)",
+              "Immediate._onImmediate (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9578:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/pgi-basic-cdk-setup/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:139:9",
+              "visit (C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:200:9)",
+              "visit (C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:197:9)",
+              "injectMetadataResources (C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:5)",
+              "Object.synthesize (C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\DELL\\AppData\\Local\\Temp\\jsii-kernel-Q1e00l\\node_modules\\@aws-cdk\\core\\lib\\stage.js:103:41)",
+              "C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8045:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8630:24)",
+              "C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8045:107",
+              "Kernel._ensureSync (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8611:28)",
+              "Kernel.invoke (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:8045:34)",
+              "KernelHost.processRequest (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9614:36)",
+              "KernelHost.run (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9577:22)",
+              "Immediate._onImmediate (C:\\Users\\DELL\\AppData\\Local\\Temp\\tmpceyckdpo\\lib\\program.js:9578:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "pgi-basic-cdk-setup"
+    }
+  }
+}
